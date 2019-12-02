@@ -32,12 +32,11 @@
 .dropdown-menu {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
   color: #576c72;
-  padding: 0;
+  padding: 1px 0 0;
   box-sizing: border-box;
   min-width: 8.625rem;
   border: 1px solid $primary;
   margin: 0.125rem -.1px 0;
-  padding-bottom: 1px;
 
   .material-icons {
     color: $medium-gray;

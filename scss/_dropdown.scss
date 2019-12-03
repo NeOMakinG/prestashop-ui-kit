@@ -77,3 +77,24 @@
     margin: 0.313rem 0;
   }
 }
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color}, 
+  .btn-outline-#{$color} {
+    + .dropdown-menu {
+      border: 1px solid $value;
+     
+      > .dropdown-item {
+        &:hover {
+          color: $value;
+          background-color: rgba($value, .1);
+        }
+
+        &:not([disabled]):not(.disabled):active,
+        &:not([disabled]):not(.disabled).active {
+          background-color: $value;
+        }
+      } 
+    }
+  }
+}

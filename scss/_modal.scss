@@ -1,11 +1,10 @@
-$component-name: modal !default;
+/* stylelint-disable scss/dollar-variable-default */
+$component-name: modal;
 
 .#{$component-name} {
-  &.show {
-    .#{$component-name}-dialog {
-      transform: translateY(-50%);
-      top: 50%;
-    }
+  & &-dialog, &.show &-dialog {
+    transform: translateY(-50%);
+    top: 50%;
   }
 
   &-header {

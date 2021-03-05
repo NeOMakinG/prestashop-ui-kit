@@ -14,4 +14,7 @@ module.exports = {
 
     return config;
   },
+  addonActionsTheme: {
+    BASE_COLOR: 'red',
+  },
 };
